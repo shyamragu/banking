@@ -1,0 +1,43 @@
+class Bankaccount:
+    def _init_(self, account_holder):
+        self.account_holder = account_holder
+        self.balance = 0.0
+def deposit(self, amount):
+    if amount > 0:
+        self.balance += amount
+        print(f"Deposited {amount:.2f}")
+    else:
+        print("Deposit amount must be positive.")
+def withdraw(self, amount):
+    if 0 < amount <= self.balance:
+        self.balance -= amount
+        print(f"Withdrew {amount:.2f}")
+    else:
+        print("Invalid withdrawal amount.")
+
+def check_balance(self):
+    print(f"Current balance: Rs{self.balance:.2f}")
+
+def main():
+    print("Welcome to Simple Bank")
+    name = input("Enter your name: ")
+    account = Bankaccount(name)
+while True:
+    print("\n1. Deposit\n2. Withdraw\n3. Check Balance\n4. Exit")
+    choice = input("Choose an option: ")
+    if choice == '1':
+        amount = float(input("Enter amount to deposit: "))
+        main.deposit(amount)
+    elif choice == '2':
+        amount = float(input("Enter amount to withdraw: "))
+        main.withdraw(amount)
+    elif choice == '3':
+        main.check_balance()
+    elif choice == '4':
+        print("Thank you for using Simple Bank.")
+        break
+    else:
+        print("Invalid option. Please try again.")
+if'__main__' == main():
+        main()
+
